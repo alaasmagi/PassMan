@@ -11,4 +11,4 @@ Data operations: SqLite3
 
 Security: basic hashing functions (it was just a uni project, okay?)
 
-User interface: Glade(gtk 3.0)
+User interface: Glade (gtk 3.0)
