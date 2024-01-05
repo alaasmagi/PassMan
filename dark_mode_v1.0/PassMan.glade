@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window1">
+    <property name="name">window1</property>
+    <property name="can-focus">False</property>
+    <property name="default-width">500</property>
+    <property name="default-height">250</property>
+    <signal name="activate-default" handler="on_window1_activate_default" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="wndwFxd1">
+        <property name="name">wndwFxd1</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel" id="loginKasutaja_lbl">
+            <property name="name">loginKasutaja</property>
+            <property name="width-request">100</property>
+            <property name="height-request">39</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Kasutajanimi:</property>
+            <property name="xalign">0</property>
+            <attributes>
+              <attribute name="foreground" value="#f5f5c2c21111"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">85</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="loginKasutaja_E">
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <signal name="changed" handler="on_loginKasutajaE_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">115</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="loginPass_lbl">
+            <property name="name">loginPass</property>
+            <property name="width-request">100</property>
+            <property name="height-request">39</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Salasõna:</property>
+            <property name="xalign">0</property>
+            <attributes>
+              <attribute name="foreground" value="#f5f5c2c21111"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">85</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="loginPass_E">
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="visibility">False</property>
+            <property name="invisible-char">*</property>
+            <signal name="changed" handler="on_loginPasE_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">115</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="kontoLoomine_lbl">
+            <property name="name">looKonto</property>
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Loo konto</property>
+            <property name="justify">center</property>
+            <property name="ellipsize">middle</property>
+            <property name="xalign">0</property>
+            <attributes>
+              <attribute name="font-desc" value="RaviPrakash Bold Italic 10"/>
+              <attribute name="foreground" value="#f5f5c2c21111"/>
+              <attribute name="absolute-size" value="17408"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">357</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="uusKasutaja_lbl">
+            <property name="name">uusKasutaja_lbl</property>
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Vali kasutajanimi:</property>
+            <property name="xalign">0</property>
+            <attributes>
+              <attribute name="foreground" value="#f5f5c2c21111"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="looKasutaja_E">
+            <property name="name">looKasutaja</property>
+            <property name="width-request">340</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <signal name="changed" handler="on_looKasutaja_E_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">301</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="uusPass_lbl">
+            <property name="name">uusPass_lbl</property>
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Vali salasõna:</property>
+            <property name="xalign">0</property>
+            <attributes>
+              <attribute name="foreground" value="#f5f5c2c21111"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">320</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="looPass_E">
+            <property name="name">looPass_E</property>
+            <property name="width-request">340</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="visibility">False</property>
+            <property name="invisible-char">*</property>
+            <signal name="changed" handler="on_looPass_E_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">301</property>
+            <property name="y">320</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="uusPassKinnita_lbl">
+            <property name="name">uusPassKinnita_lbl</property>
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Kinnita salasõna:</property>
+            <property name="xalign">0</property>
+            <attributes>
+              <attribute name="foreground" value="#f5f5c2c21111"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">390</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="uusPassKinnita_E">
+            <property name="name">uusPassKinnita_E</property>
+            <property name="width-request">340</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="visibility">False</property>
+            <property name="invisible-char">*</property>
+            <signal name="changed" handler="on_uusPassKinnita_E_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">301</property>
+            <property name="y">390</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="looKonto_btn">
+            <property name="name">looKonto_btn</property>
+            <property name="width-request">323</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_looKonto_btn_clicked" swapped="no"/>
+            <signal name="enter" handler="on_looKonto_btn_enter" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Loo konto</property>
+                <attributes>
+                  <attribute name="foreground" value="#f5f5c2c21111"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">317</property>
+            <property name="y">455</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="login_error_lbl">
+            <property name="name">login_error_lbl</property>
+            <property name="width-request">100</property>
+            <property name="height-request">35</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Vale kasutajanimi või salasõna</property>
+            <attributes>
+              <attribute name="foreground" value="#c0c01c1c2828"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="right_lbl">
+            <property name="name">right_lbl</property>
+            <property name="width-request">30</property>
+            <property name="height-request">30</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">✓</property>
+            <attributes>
+              <attribute name="font-desc" value="RaviPrakash Bold Italic 10"/>
+              <attribute name="foreground" value="#2626a2a26969"/>
+              <attribute name="absolute-size" value="23552"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">640</property>
+            <property name="y">398</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="wrong_lbl">
+            <property name="name">wrong_lbl</property>
+            <property name="width-request">100</property>
+            <property name="height-request">25</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Salasõnad ei ühti.</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans 10"/>
+              <attribute name="foreground" value="#c0c01c1c2828"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">410</property>
+            <property name="y">434</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="puhasta_btn">
+            <property name="name">puhasta_btn</property>
+            <property name="width-request">130</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_tyhista_btn_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Tühjenda väljad</property>
+                <attributes>
+                  <attribute name="foreground" value="#f5f5c2c21111"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">455</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="eksisteeriv_kasutajanimi_lbl">
+            <property name="name">eksisteeriv_kasutajanimi_lbl</property>
+            <property name="width-request">100</property>
+            <property name="height-request">4</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Selline kasutajanimi juba eksisteerib.
+</property>
+            <attributes>
+              <attribute name="foreground" value="#c0c01c1c2828"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">352</property>
+            <property name="y">298</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="passi_pikkus_lbl">
+            <property name="name">passi_pikkus_lbl</property>
+            <property name="width-request">100</property>
+            <property name="height-request">25</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Salasõna pikkus peab olema vähemalt 8 tähemärki.</property>
+            <attributes>
+              <attribute name="foreground" value="#c0c01c1c2828"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">301</property>
+            <property name="y">365</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="left_img">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">Design/left.png</property>
+          </object>
+          <packing>
+            <property name="x">67</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="cent_img">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">Design/center_dark.png</property>
+          </object>
+          <packing>
+            <property name="x">241</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="right_img">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">Design/right.png</property>
+          </object>
+          <packing>
+            <property name="x">559</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="login_btn">
+            <property name="name">login</property>
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_login_clicked" swapped="no"/>
+            <signal name="enter" handler="on_login_btn_enter" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Logi sisse</property>
+                <attributes>
+                  <attribute name="foreground" value="#f5f5c2c21111"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">543</property>
+            <property name="y">115</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window2">
+    <property name="name">window2</property>
+    <property name="can-focus">False</property>
+    <signal name="activate-focus" handler="on_window2_activate_focus" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="wndwFxd2">
+        <property name="name">wndwFxd2</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkStack" id="stk1">
+            <property name="name">stk1</property>
+            <property name="width-request">775</property>
+            <property name="height-request">250</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkFixed" id="uus_fxd">
+                <property name="name">uus_fxd</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="margin-bottom">97</property>
+                <child>
+                  <object class="GtkEntry" id="uus_keskkond_E">
+                    <property name="name">uus_keskkond_E</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <signal name="changed" handler="on_uus_keskkond_E_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">440</property>
+                    <property name="y">65</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="uus_keskkond_lbl">
+                    <property name="name">uus_keskkond_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Sisesta keskkond:</property>
+                    <attributes>
+                      <attribute name="foreground" value="#f5f5c2c21111"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">444</property>
+                    <property name="y">20</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="uus_kasutaja_E">
+                    <property name="name">uus_kasutaja_E</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <signal name="changed" handler="on_uus_kasutaja_E_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">190</property>
+                    <property name="y">65</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="uus_kasutaja_lbl">
+                    <property name="name">uus_kasutaja_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Sisesta kasutajanimi:</property>
+                    <attributes>
+                      <attribute name="foreground" value="#f5f5c2c21111"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">194</property>
+                    <property name="y">20</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="uus_URL_E">
+                    <property name="name">uus_URL_E</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <signal name="changed" handler="on_uus_URL_E_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">440</property>
+                    <property name="y">160</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="uus_URL_lbl">
+                    <property name="name">uus_URL_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Sisesta URL (valikuline):</property>
+                    <attributes>
+                      <attribute name="foreground" value="#f5f5c2c21111"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">444</property>
+                    <property name="y">115</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="uus_pass_E">
+                    <property name="name">uus_pass_E</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="visibility">False</property>
+                    <property name="invisible-char">*</property>
+                    <signal name="changed" handler="on_uus_pass_E_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">190</property>
+                    <property name="y">160</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="uus_pass_lbl">
+                    <property name="name">uus_pass_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Sisesta salasõna:</property>
+                    <attributes>
+                      <attribute name="foreground" value="#f5f5c2c21111"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">194</property>
+                    <property name="y">115</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="new_btn">
+                    <property name="name">new_btn</property>
+                    <property name="width-request">83</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_new_btn_clicked" swapped="no"/>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Lisa</property>
+                        <attributes>
+                          <attribute name="foreground" value="#f5f5c2c21111"/>
+                        </attributes>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">525</property>
+                    <property name="y">255</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="tyhista2_btn">
+                    <property name="name">tyhista2_btn</property>
+                    <property name="width-request">62</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_tyhista2_btn_clicked" swapped="no"/>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Tühjenda</property>
+                        <attributes>
+                          <attribute name="foreground" value="#f5f5c2c21111"/>
+                        </attributes>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">440</property>
+                    <property name="y">255</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="uus_pass_kontroll_lbl">
+                    <property name="name">uus_pass_kontroll_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Kontrolli salasõna:</property>
+                    <attributes>
+                      <attribute name="foreground" value="#f5f5c2c21111"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">194</property>
+                    <property name="y">210</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="uus_pass_kontroll_E">
+                    <property name="name">uus_pass_kontroll_E</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="visibility">False</property>
+                    <property name="invisible-char">*</property>
+                    <signal name="changed" handler="on_uus_pass_kontroll_E_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">190</property>
+                    <property name="y">255</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="lisatud_lbl">
+                    <property name="name">lisatud_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Uus parool edukalt lisatud!</property>
+                    <attributes>
+                      <attribute name="font-desc" value="RaviPrakash Bold Italic 10"/>
+                      <attribute name="foreground" value="#2e2ec2c27e7e"/>
+                      <attribute name="size" value="12288"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">276</property>
+                    <property name="y">329</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="pass_error_lbl">
+                    <property name="name">pass_error_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">25</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Salasõnad ei ühti.</property>
+                    <attributes>
+                      <attribute name="foreground" value="#c0c01c1c2828"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">215</property>
+                    <property name="y">298</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="name">page0</property>
+                <property name="title" translatable="yes">Lisa uus</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="otsing_fxd">
+                <property name="name">otsing_fxd</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkLabel" id="otsing_lbl">
+                    <property name="name">otsing_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Otsi salasõna:</property>
+                    <attributes>
+                      <attribute name="foreground" value="#f5f5c2c21111"/>
+                      <attribute name="size" value="12288"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">129</property>
+                    <property name="y">55</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="copy_btn">
+                    <property name="name">copy_btn</property>
+                    <property name="width-request">168</property>
+                    <property name="height-request">50</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_copy_btn_clicked" swapped="no"/>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Kopeeri salasõna</property>
+                        <attributes>
+                          <attribute name="foreground" value="#f5f5c2c21111"/>
+                        </attributes>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">134</property>
+                    <property name="y">375</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkTextView" id="result_tv">
+                    <property name="name">result_tv</property>
+                    <property name="width-request">516</property>
+                    <property name="height-request">225</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <signal name="show" handler="on_result_tv_show" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">134</property>
+                    <property name="y">146</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="result_lbl">
+                    <property name="name">result_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Tulemus:</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans 10"/>
+                      <attribute name="foreground" value="#f5f5c2c21111"/>
+                      <attribute name="size" value="12288"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">129</property>
+                    <property name="y">108</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="otsi_btn">
+                    <property name="name">otsi_btn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_otsi_btn_clicked" swapped="no"/>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Otsi</property>
+                        <attributes>
+                          <attribute name="foreground" value="#f5f5c2c21111"/>
+                        </attributes>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">575</property>
+                    <property name="y">62</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="search_error_lbl">
+                    <property name="name">search_error_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Tulemust ei leitud!</property>
+                    <attributes>
+                      <attribute name="foreground" value="#c0c01c1c2828"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">344</property>
+                    <property name="y">103</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="otsing_SE_E">
+                    <property name="name">otsing_SE_E</property>
+                    <property name="width-request">305</property>
+                    <property name="height-request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <signal name="changed" handler="on_otsing_SE_E_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">263</property>
+                    <property name="y">55</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="copy_success_lbl">
+                    <property name="name">copy_success_lbl</property>
+                    <property name="width-request">100</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Salasõna kopeeriti lõikelauale!</property>
+                    <attributes>
+                      <attribute name="foreground" value="#2626a2a26969"/>
+                      <attribute name="size" value="11800"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">261</property>
+                    <property name="y">440</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="reset_btn">
+                    <property name="name">reset_btn</property>
+                    <property name="width-request">168</property>
+                    <property name="height-request">50</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Tühjenda otsing</property>
+                        <attributes>
+                          <attribute name="foreground" value="#f5f5c2c21111"/>
+                        </attributes>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">482</property>
+                    <property name="y">375</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="name">page1</property>
+                <property name="title" translatable="yes">Otsing</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">46</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStackSwitcher" id="sw1">
+            <property name="name">sw1</property>
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="homogeneous">True</property>
+            <property name="stack">stk1</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="logout_btn">
+            <property name="name">logout_btn</property>
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_logout_btn_clicked" swapped="no"/>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Logi välja</property>
+                <attributes>
+                  <attribute name="foreground" value="#f5f5c2c21111"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">675</property>
+            <property name="y">5</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window3">
+    <property name="name">window3</property>
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkFixed" id="wndwFxd3">
+        <property name="name">wndwFxd3</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel" id="konto_loodud_lbl">
+            <property name="name">konto_loodud_lbl</property>
+            <property name="width-request">110</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Konto edukalt loodud!</property>
+            <attributes>
+              <attribute name="font-desc" value="RaviPrakash Bold Italic 10"/>
+              <attribute name="foreground" value="#f5f5c2c21111"/>
+              <attribute name="size" value="17408"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">104</property>
+            <property name="y">77</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="continue_btn">
+            <property name="name">continue_btn</property>
+            <property name="width-request">100</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Mine avalehele</property>
+                <attributes>
+                  <attribute name="foreground" value="#f5f5c2c21111"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">180</property>
+            <property name="y">142</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
