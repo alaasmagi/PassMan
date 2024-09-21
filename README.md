@@ -7,6 +7,7 @@
 * UI language: Estonian
 * Languages and technologies: **C & SQLite**
 * Authors: Aleksander Laasmägi, Kristofer Mäeots, Eeva-Maria Tšernova
+* **TalTech 2023**
 
 ## How to run
 
@@ -20,5 +21,3 @@ Frontend is developed using Glade (gtk 3.0).
 ### Security
 Hashing functions are used to secure all sensitive content.
 
-
-**TalTech 2023**
