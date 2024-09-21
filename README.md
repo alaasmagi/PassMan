@@ -1,14 +1,24 @@
-# PassMan
-University project focused on developing a basic password manager.
+# PassMan - password manager 
 
-Authors: Aleksander Laasmägi, Eeva-Maria Tšernova, Kristofer Mäeots
-2023, Taltech
+## Description
+
+* Uni project
+* Task: to develop a password manager using C language
+* UI language: Estonian
+* Languages and technologies: **C & SQLite**
+* Authors: Aleksander Laasmägi, Kristofer Mäeots, Eeva-Maria Tšernova
+
+## How to run
+
+* The app runs on Linux, it has darkmode and light mode separately. Both folder have Linux executable for _plug-n-play_ experience.
+
+## Explanation of the structure
+
+### Frontend/UI
+Frontend is developed using Glade (gtk 3.0).
+
+### Security
+Hashing functions are used to secure all sensitive content.
 
 
-Supported OS: Linux (Developed and tested on Ubuntu 22.04.2 LTS)
-
-Data operations: SqLite3
-
-Security: basic hashing functions (it was just a uni project, okay?)
-
-User interface: Glade (gtk 3.0)
+**TalTech 2023**
