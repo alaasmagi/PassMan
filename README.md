@@ -7,7 +7,7 @@
 * UI language: Estonian
 * Languages and technologies: **C & SQLite**
 * Authors: Aleksander Laasmägi, Kristofer Mäeots, Eeva-Maria Tšernova
-* **TalTech 2023**
+* Development place and year: **TalTech 2023**
 
 ## How to run
 
