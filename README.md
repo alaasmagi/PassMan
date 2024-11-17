@@ -47,5 +47,9 @@ If you encounter any issues:
 *  Verify SQLite compatibility.
 *  For additional support, contact the authors.
 
+## Illustrative images
+### Dark mode:
 ![Screenshot from 2023-04-28 13-02-16](https://github.com/user-attachments/assets/8cd87d20-6f16-4168-a58d-af10536be273)
+
+### Light mode:
 ![Screenshot from 2023-04-28 13-13-01](https://github.com/user-attachments/assets/f76bfa2c-25dd-4f2c-bb92-2741104155c2)
