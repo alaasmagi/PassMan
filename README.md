@@ -11,9 +11,9 @@
 
 ## How to run
 
-*  Download the folder corresponding to your preferred theme (dark mode or light mode)
-*  The app runs on Linux. Both _plug-n-play_ folders have Linux executables for _plug-n-play_ experience
-*  Ensure your system supports GTK 3.0 and SQLite
+*  Download the folder corresponding to your preferred theme (dark mode or light mode).
+*  The app runs on Linux. Both _plug-n-play_ folders have Linux executables for _plug-n-play_ experience.
+*  Ensure your system supports GTK 3.0 and SQLite.
 
 ## Features
 *  Quite secure storage and management of passwords.
@@ -23,14 +23,14 @@
 ## Application structure
 
 ### Frontend/UI
-Frontend is developed using Glade (gtk 3.0)
+Frontend is developed using Glade (gtk 3.0).
 
 ### Database
-*  Passwords are hashed using the SHA-256 algorithm
-*  Database files are encrypted using ccrypt
+*  Passwords are hashed using the SHA-256 algorithm.
+*  Database files are encrypted using ccrypt.
 
 ### Security
-Hashing functions are used to secure all sensitive content
+Hashing functions are used to secure all sensitive content.
 
 ## Technical requirements
 *  A Linux distribution with support for **GTK 3.0** and **SQLite**
