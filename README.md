@@ -53,3 +53,7 @@ If you encounter any issues:
 
 ### Light mode:
 ![Screenshot from 2023-04-28 13-13-01](https://github.com/user-attachments/assets/f76bfa2c-25dd-4f2c-bb92-2741104155c2)
+
+## Detailed Documentation (In Estonian)
+[Report_EST](https://github.com/user-attachments/files/18101110/Paroolihaldur_PassMan_aruanne.1.pdf)
+
